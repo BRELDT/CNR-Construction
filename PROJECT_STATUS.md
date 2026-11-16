@@ -10,14 +10,14 @@ The application includes Home, Quotes & Invoices, and Jobs, with a standalone PW
 
 ## Verification
 
-- The hosted test build completed. Nine targeted local authentication and backend tests passed.
+- The hosted test build completed.
 - The hosted test site blocked signed-out access. The test backend rejected a direct request without server authorization.
 - The previous Google-only test app verified all three tabs, quote-to-invoice conversion, recording a payment, expense persistence, routing and fuel costs, projected profitability, and invoice PDF generation. The app recorded test quote and invoice emails as sent. Inbox receipt remains to be confirmed.
 
+## Safari repair
+
+Fixed and redeployed the existing private test site. Verified the styled dashboard, existing records, sign-in, sign-out, all three tabs at desktop and mobile widths, and denial of direct API access without a session. Twelve automated tests and the local Chromium workflow passed.
+
 ## Next steps
 
-1. Complete owner credential setup. Verify hosted sign-in, sign-out, and authenticated access to existing fictional records. Check that the three tabs open and that direct requests without a session are denied.
-2. Close enrollment and complete a signed-out browser check before opening public access to the test login.
-3. Check the business workflows through the new login and install the PWA on iPhone and Android. Record bugs and results here after each major stage.
-
-Keep CNR test records separate from business records, preserve backups before significant changes, and obtain separate approval for business production use.
+Keep the app in private testing. Before a future public test, disable enrollment and repeat the signed-out checks. Complete physical-device PWA testing and verify the remaining business workflows using fictional records. Update this file after major stages and obtain separate approval before business production use.
